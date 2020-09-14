@@ -10,10 +10,11 @@ import { ToastrService } from './common/toastr.service';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { appRoutes } from './routes';
 import { NavBarComponent } from './nav/navbar.component';
-
+import { CreateEventComponent } from './events/create-event.component';
 @NgModule({
   imports: [
-    BrowserModule,
+
+  BrowserModule,
         RouterModule.forRoot(appRoutes)
       ],
   declarations: [
@@ -21,7 +22,8 @@ import { NavBarComponent } from './nav/navbar.component';
     EventsListComponent,
     EventThumbnailComponent,
     EventDetailsComponent,
-    NavBarComponent
+    NavBarComponent,
+    CreateEventComponent
   ],
   providers: [EventService, ToastrService],
   bootstrap: [EventsAppComponent]
